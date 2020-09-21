@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SwiftDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SwiftDemo
+  pod 'Kingfisher', '~> 5.0' #图片处理，类似SDWebImageView
+  pod 'Alamofire', '~> 5.2' #网络请求，类似AFNetworking
+  pod 'ReachabilitySwift'
+  pod 'SwiftyJSON', '~> 4.0' #JSON处理
+  pod 'SnapKit', '~> 5.0.0' #类似于Masonry
+end
