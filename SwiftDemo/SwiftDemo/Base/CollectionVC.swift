@@ -33,7 +33,8 @@ class CollectionVC: NormalVC, UICollectionViewDelegate, UICollectionViewDataSour
         layoutUI()
     }
     
-    func layoutUI() {
+    override func layoutUI() {
+        super.layoutUI()
         self.colletionView.contentInsetAdjustmentBehavior = .never;
     }
     

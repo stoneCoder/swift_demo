@@ -31,7 +31,8 @@ class DetailVC: NormalVC, UITableViewDelegate, UITableViewDataSource{
         // Do any additional setup after loading the view.
     }
     
-    func layoutUI() {
+    override func layoutUI() {
+        super.layoutUI()
         self.tableView.contentInsetAdjustmentBehavior = .never;
         self.tableView.dataSource = self
     }

@@ -22,6 +22,9 @@
 		6A26E1C02518506D006CB942 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E1BF2518506D006CB942 /* WebVC.swift */; };
 		6A26E1C225185086006CB942 /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E1C125185086006CB942 /* CollectionVC.swift */; };
 		6A26E1C425187981006CB942 /* WKDetailWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E1C325187981006CB942 /* WKDetailWebView.swift */; };
+		6A9798E825198F5E0088D0A3 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9798E725198F5E0088D0A3 /* Const.swift */; };
+		6A9798EB2519CEC10088D0A3 /* UIImage+imageWithColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9798EA2519CEC10088D0A3 /* UIImage+imageWithColor.swift */; };
+		6A9798ED2519E3430088D0A3 /* UIViewController+ShowAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9798EC2519E3430088D0A3 /* UIViewController+ShowAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		6A26E1BF2518506D006CB942 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		6A26E1C125185086006CB942 /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
 		6A26E1C325187981006CB942 /* WKDetailWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKDetailWebView.swift; sourceTree = "<group>"; };
+		6A9798E725198F5E0088D0A3 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		6A9798EA2519CEC10088D0A3 /* UIImage+imageWithColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+imageWithColor.swift"; sourceTree = "<group>"; };
+		6A9798EC2519E3430088D0A3 /* UIViewController+ShowAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+ShowAlertView.swift"; path = "SwiftDemo/Category/UIViewController+ShowAlertView.swift"; sourceTree = SOURCE_ROOT; };
 		A67E8F44834045E0284A2D4F /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +94,7 @@
 		6A26E19D25182D05006CB942 /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6A9798E92519CE4E0088D0A3 /* Category */,
 				6A26E1B425184E8F006CB942 /* Base */,
 				6A26E1B2251836B6006CB942 /* SwiftDemo.swift */,
 				6A26E19E25182D05006CB942 /* AppDelegate.swift */,
@@ -111,8 +118,18 @@
 				6A26E1BF2518506D006CB942 /* WebVC.swift */,
 				6A26E1C125185086006CB942 /* CollectionVC.swift */,
 				6A26E1C325187981006CB942 /* WKDetailWebView.swift */,
+				6A9798E725198F5E0088D0A3 /* Const.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		6A9798E92519CE4E0088D0A3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6A9798EC2519E3430088D0A3 /* UIViewController+ShowAlertView.swift */,
+				6A9798EA2519CEC10088D0A3 /* UIImage+imageWithColor.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		6D2558B5C1B3D0C715DE8B7D /* Frameworks */ = {
@@ -243,6 +260,9 @@
 				6A26E1A325182D05006CB942 /* ViewController.swift in Sources */,
 				6A26E1BA25184FFF006CB942 /* RootTBC.swift in Sources */,
 				6A26E1C225185086006CB942 /* CollectionVC.swift in Sources */,
+				6A9798EB2519CEC10088D0A3 /* UIImage+imageWithColor.swift in Sources */,
+				6A9798E825198F5E0088D0A3 /* Const.swift in Sources */,
+				6A9798ED2519E3430088D0A3 /* UIViewController+ShowAlertView.swift in Sources */,
 				6A26E1BC2518502A006CB942 /* NormalVC.swift in Sources */,
 				6A26E19F25182D05006CB942 /* AppDelegate.swift in Sources */,
 				6A26E1BE25185056006CB942 /* DetailVC.swift in Sources */,
