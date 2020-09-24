@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  SwiftDemo
 //
-//  Created by sinosun on 2020/9/21.
-//  Copyright © 2020 sinosun. All rights reserved.
+//  Created by Consle on 2020/9/21.
+//  Copyright © 2020 Consle. All rights reserved.
 //
 
 import UIKit
@@ -70,6 +70,14 @@ class ViewController: UIViewController {
     //注意关键字@objc 有参数
     @objc func btnClickActionWithPara(sender:UIButton) {
         print("测试按钮事件 - 有参数\(sender)")
+        
+        self.showHaveNoTitleAlertView(message: "呵呵哒", cancelAction: { (action) in
+            print("点击取消按钮")
+        }) { (action) in
+            print("点击确认按钮")
+        }
+        return
+        
         let webVC:WebVC = WebVC()
         self.present(webVC, animated: true, completion: nil)
         webVC.loadWebViewWith(url: "https://www.baidu.com")

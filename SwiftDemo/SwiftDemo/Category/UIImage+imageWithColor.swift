@@ -2,8 +2,8 @@
 //  UIImage+imageWithColor.swift
 //  SwiftDemo
 //
-//  Created by sinosun on 2020/9/22.
-//  Copyright © 2020 sinosun. All rights reserved.
+//  Created by Consle on 2020/9/22.
+//  Copyright © 2020 Consle. All rights reserved.
 //
 
 import Foundation
@@ -16,7 +16,7 @@ extension UIImage{
     }
     
     class func imageWithColor(color:UIColor?,size:CGSize) -> UIImage?{
-        if (color !== nil || size.width <= 0 || size.height <= 0){
+        if (color === nil || size.width <= 0 || size.height <= 0){
             return nil
         }
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)

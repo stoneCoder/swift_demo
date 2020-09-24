@@ -2,8 +2,8 @@
 //  BaseNav.swift
 //  SwiftDemo
 //
-//  Created by sinosun on 2020/9/21.
-//  Copyright © 2020 sinosun. All rights reserved.
+//  Created by Consle on 2020/9/21.
+//  Copyright © 2020 Consle. All rights reserved.
 //
 
 import UIKit
