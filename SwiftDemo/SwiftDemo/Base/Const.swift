@@ -40,6 +40,10 @@ func colorFromHex(h:Int) ->UIColor {
     return colorFromRGB(r: CGFloat(((h)>>16) & 0xFF), CGFloat(((h)>>8) & 0xFF), CGFloat((h) & 0xFF), alpha: 1.0)
 }
 
+func colorFromHex(h:Int, alpha:CGFloat) ->UIColor {
+    return colorFromRGB(r: CGFloat(((h)>>16) & 0xFF), CGFloat(((h)>>8) & 0xFF), CGFloat((h) & 0xFF), alpha: alpha)
+}
+
 func kFont(size:CGFloat) -> UIFont {
     return UIFont.systemFont(ofSize: size);
 }
