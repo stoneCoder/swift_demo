@@ -14,7 +14,7 @@ class DetailVC: NormalVC, UITableViewDelegate, UITableViewDataSource{
     lazy var tableView:UITableView = {
         var obj:UITableView = UITableView(frame: self.view.frame, style: .grouped)
         if(self.isPlainStyle){
-            obj = UITableView(frame: .zero, style: .plain)
+            obj = UITableView(frame: self.view.frame, style: .plain)
         }
         obj.delegate = self
         obj.showsVerticalScrollIndicator = false
@@ -40,6 +40,14 @@ class DetailVC: NormalVC, UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

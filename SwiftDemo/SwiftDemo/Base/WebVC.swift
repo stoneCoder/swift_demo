@@ -100,6 +100,7 @@ class WebVC: NormalVC {
     deinit {
         self.detailWebView.removeObserver(self, forKeyPath: "title")
         self.detailWebView.removeObserver(self, forKeyPath: "estimatedProgress")
+        print("WebVC销毁了")
     }
     
 

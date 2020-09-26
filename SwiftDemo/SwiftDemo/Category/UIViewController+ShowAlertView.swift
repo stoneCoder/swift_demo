@@ -86,4 +86,14 @@ extension UIViewController{
             self.present(alertVC, animated: true, completion: nil)
         }
     }
+    
+    func callHandleInMainThread(_ handle: (()->Void)?) {
+        if(Thread.isMainThread){
+            handle?()
+        }else{
+            DispatchQueue.main.async {
+                handle?()
+            }
+        }
+    }
 }

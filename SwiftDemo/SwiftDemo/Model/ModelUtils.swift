@@ -30,4 +30,33 @@ class ModelUtils: NSObject {
         let jsonData = try? JSONSerialization.data(withJSONObject: jsonDic, options: [])
         return String(data: jsonData!, encoding: .utf8)
     }
+    
+    //时间戳转成字符串
+    class func timeIntervalChangeToTimeStr(timeInterval:TimeInterval, dateFormat:String?) -> String {
+        let date:NSDate = NSDate.init(timeIntervalSince1970: timeInterval/1000)
+        let formatter = DateFormatter.init()
+        if dateFormat == nil {
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        }else{
+            formatter.dateFormat = dateFormat
+        }
+        return formatter.string(from: date as Date)
+    }
+    
+    //字符串转时间戳
+    class func timeStrChangeTotimeInterval(timeStr: String?, dateFormat:String?) -> String {
+        if timeStr?.count ?? 0 > 0 {
+            return ""
+        }
+        let format = DateFormatter.init()
+        format.dateStyle = .medium
+        format.timeStyle = .short
+        if dateFormat == nil {
+            format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        }else{
+            format.dateFormat = dateFormat
+        }
+        let date = format.date(from: timeStr!)
+        return String(date!.timeIntervalSince1970)
+    }
 }
