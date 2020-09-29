@@ -13,6 +13,8 @@ import Kingfisher
 
 class ViewController: UIViewController {
     
+    var networkBtnLeftConstraint: Constraint?
+    
     lazy var btn:UIButton = {
         let obj = UIButton();
         
@@ -60,7 +62,7 @@ class ViewController: UIViewController {
         obj.addTarget(self, action: #selector(btnClickActionWithPara(sender:)), for: .touchUpInside)
         self.view.addSubview(obj)
         obj.snp.makeConstraints { (make) in
-            make.left.equalTo(self.imageBtn.snp.right).offset(10)
+            self.networkBtnLeftConstraint = make.left.equalTo(self.imageBtn.snp.right).offset(10).constraint
             make.top.equalTo(self.imageBtn)
             make.bottom.equalTo(self.imageBtn)
             make.width.equalTo(self.imageBtn)
@@ -122,9 +124,6 @@ class ViewController: UIViewController {
 //        }
 //        print(webView.bridge ?? "娃哈哈") //有值就打印bridge 无值的话打印娃哈哈
 //        webView.loadWebViewWith(url: "https://www.baidu.com", customCallBack: nil)
-        
-       
-        
     }
     
     //注意关键字@objc 无参数
@@ -162,6 +161,12 @@ class ViewController: UIViewController {
         let jsonStr = "{\"id\":\"127182781278\",\"name\":\"小明\",\"grade\":1}".data(using: .utf8)
         let st = try? JSONDecoder().decode(Car.self,from: jsonStr!)
         print("1-----------\(st!)")
+        
+//        self.networkBtnLeftConstraint?.deactivate() //注销约束
+        self.networkBtnLeftConstraint?.update(offset: 100) //动态修改约束
+        UIView.animate(withDuration: 0.5, animations: {
+            self.networkBtn.layoutIfNeeded()
+        })
     }
     
     //注意关键字@objc 有参数

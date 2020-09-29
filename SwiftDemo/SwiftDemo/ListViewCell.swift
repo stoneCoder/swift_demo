@@ -44,8 +44,6 @@ class ListViewCell: UITableViewCell {
     
     lazy var titleLabel:UILabel = {
         var obj = UILabel()
-        
-        obj.numberOfLines = 2
         self.contentView.addSubview(obj)
         obj.snp.makeConstraints { (make) in
             make.left.equalTo(self.picImageView.snp.right).offset(10)
@@ -77,9 +75,19 @@ class ListViewCell: UITableViewCell {
     }()
     
     func layoutUI() {
+        self.titleLabel.numberOfLines = 2
         self.titleLabel.textColor = colorFromHex(h: 0x333333)
         self.infoLabel.textColor = colorFromHex(h: 0x666666)
         self.timeLabel.textColor = colorFromHex(h: 0x999999)
+        
+        //修改常量约束
+//        self.timeLabel.snp.updateConstraints { (make) in
+//            make.right.equalTo(self.contentView).offset(-40)
+//        }
+        //刷新全部约束
+//        self.timeLabel.snp.remakeConstraints { (make) in
+//
+//        }
     }
     
     func refreshViewWithModel(people:People) {
