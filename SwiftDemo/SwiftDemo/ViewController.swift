@@ -70,6 +70,19 @@ class ViewController: UIViewController {
         return obj
     }()
     
+    lazy var pdfBtn:UIButton = {
+        let obj = UIButton()
+        obj.addTarget(self, action: #selector(pdfBtnClick), for: .touchUpInside)
+        self.view.addSubview(obj)
+        obj.snp.makeConstraints { (make) in
+            make.left.equalTo(self.networkBtn.snp.right).offset(10)
+            make.top.equalTo(self.networkBtn)
+            make.bottom.equalTo(self.networkBtn)
+            make.width.equalTo(self.networkBtn)
+        }
+        return obj
+    }()
+    
     lazy var tableView:UITableView = {
         let obj = UITableView()
         
@@ -101,6 +114,9 @@ class ViewController: UIViewController {
         
         self.networkImageView.backgroundColor = UIColor.blue
         self.networkImageView.kf.setImage(with: URL(string: "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1473836766,4030812874&fm=26&gp=0.jpg"))
+        
+        self.pdfBtn.backgroundColor = UIColor.gray
+        self.pdfBtn.setTitle("打开PDF", for: .normal)
         
         self.view.layoutIfNeeded()
         let listVC = ListVC()
@@ -185,6 +201,13 @@ class ViewController: UIViewController {
 //        }
         
         
+    }
+    
+    @objc func pdfBtnClick(){
+//        var pdfReader = JKPDFReader()
+//        pdfReader.openPDFAtPath(path: Bundle.main.url(forResource: "test.pdf", withExtension: nil)!)
+          var audioManager = JKAudioManager()
+          audioManager.test()
     }
     
     func loadWebVCInView() {

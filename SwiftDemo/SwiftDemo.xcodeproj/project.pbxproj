@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4867887925450A670054D136 /* JKPDFReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867887825450A670054D136 /* JKPDFReader.swift */; };
+		4867887B25450FD40054D136 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4867887A25450FD40054D136 /* test.pdf */; };
+		4867887D25456CAF0054D136 /* JKAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867887C25456CAF0054D136 /* JKAudioManager.swift */; };
+		4867887F254570010054D136 /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4867887E254570010054D136 /* test.m4a */; };
 		61F5267422909193C7E4489C /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2E253A34B562BEFBBD415B /* Pods_SwiftDemo.framework */; };
 		6A05F494251D80BD00C098EF /* NetworkConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05F493251D80BD00C098EF /* NetworkConst.swift */; };
 		6A05F49A251D841700C098EF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05F499251D841700C098EF /* Person.swift */; };
@@ -41,6 +45,10 @@
 /* Begin PBXFileReference section */
 		3B2E253A34B562BEFBBD415B /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA653C0FBECB7679CF9434D /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4867887825450A670054D136 /* JKPDFReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKPDFReader.swift; sourceTree = "<group>"; };
+		4867887A25450FD40054D136 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
+		4867887C25456CAF0054D136 /* JKAudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAudioManager.swift; sourceTree = "<group>"; };
+		4867887E254570010054D136 /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 		6A05F493251D80BD00C098EF /* NetworkConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConst.swift; sourceTree = "<group>"; };
 		6A05F499251D841700C098EF /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		6A05F4A1251D968C00C098EF /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -103,6 +111,8 @@
 				6A05F4A8251DC15100C098EF /* SSResponse.swift */,
 				6A05F4AC251DC77300C098EF /* ModelUtils.swift */,
 				6A227ABC251DE4BE005D0849 /* Car.swift */,
+				4867887825450A670054D136 /* JKPDFReader.swift */,
+				4867887C25456CAF0054D136 /* JKAudioManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +138,8 @@
 		6A26E19D25182D05006CB942 /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4867887E254570010054D136 /* test.m4a */,
+				4867887A25450FD40054D136 /* test.pdf */,
 				6A05F4A7251DC05500C098EF /* Model */,
 				6A9798E92519CE4E0088D0A3 /* Category */,
 				6A26E1B425184E8F006CB942 /* Base */,
@@ -241,8 +253,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4867887B25450FD40054D136 /* test.pdf in Resources */,
 				6A26E1AB25182D07006CB942 /* LaunchScreen.storyboard in Resources */,
 				6A26E1A825182D07006CB942 /* Assets.xcassets in Resources */,
+				4867887F254570010054D136 /* test.m4a in Resources */,
 				6A26E1A625182D05006CB942 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,9 +331,11 @@
 				6A26E1BE25185056006CB942 /* DetailVC.swift in Sources */,
 				6A227ABD251DE4BE005D0849 /* Car.swift in Sources */,
 				6A26E1C425187981006CB942 /* WKDetailWebView.swift in Sources */,
+				4867887D25456CAF0054D136 /* JKAudioManager.swift in Sources */,
 				6A05F4AD251DC77300C098EF /* ModelUtils.swift in Sources */,
 				6A05F4A6251D999B00C098EF /* Convertable.swift in Sources */,
 				6A26E1B825184F84006CB942 /* BaseNC.swift in Sources */,
+				4867887925450A670054D136 /* JKPDFReader.swift in Sources */,
 				6A26E1A125182D05006CB942 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -450,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
