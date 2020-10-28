@@ -206,8 +206,8 @@ class ViewController: UIViewController {
     @objc func pdfBtnClick(){
 //        var pdfReader = JKPDFReader()
 //        pdfReader.openPDFAtPath(path: Bundle.main.url(forResource: "test.pdf", withExtension: nil)!)
-          var audioManager = JKAudioManager()
-          audioManager.test()
+        let audioPlayer = JKAudioPlayer.init(url: Bundle.main.url(forResource: "test.wav", withExtension: nil)!)
+//        audioPlayer!.play()
     }
     
     func loadWebVCInView() {
