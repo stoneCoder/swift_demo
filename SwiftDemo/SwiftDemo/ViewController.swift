@@ -17,9 +17,6 @@ class ViewController: UIViewController {
     
     lazy var btn:UIButton = {
         let obj = UIButton();
-        
-        //添加按钮响应事件
-//        obj.addTarget(self, action: #selector(btnClickAction), for: .touchUpInside)
         obj.addTarget(self, action: #selector(btnClickActionWithPara(sender:)), for: UIControl.Event.touchUpInside)
         self.view.addSubview(obj);
         obj.snp.makeConstraints { (make:ConstraintMaker) in
@@ -70,15 +67,41 @@ class ViewController: UIViewController {
         return obj
     }()
     
-    lazy var pdfBtn:UIButton = {
+    lazy var musicPlayBtn:UIButton = {
         let obj = UIButton()
-        obj.addTarget(self, action: #selector(pdfBtnClick), for: .touchUpInside)
+        obj.addTarget(self, action: #selector(musicPlayClick(sender:)), for: .touchUpInside)
         self.view.addSubview(obj)
         obj.snp.makeConstraints { (make) in
-            make.left.equalTo(self.networkBtn.snp.right).offset(10)
-            make.top.equalTo(self.networkBtn)
-            make.bottom.equalTo(self.networkBtn)
-            make.width.equalTo(self.networkBtn)
+            make.left.equalTo(self.imageBtn)
+            make.top.equalTo(self.imageBtn.snp.bottom).offset(10)
+            make.width.equalTo(self.imageBtn)
+            make.height.equalTo(self.imageBtn)
+        }
+        return obj
+    }()
+    
+    lazy var musicResumeBtn:UIButton = {
+        let obj = UIButton()
+        obj.addTarget(self, action: #selector(musicPlayClick(sender:)), for: .touchUpInside)
+        self.view.addSubview(obj)
+        obj.snp.makeConstraints { (make) in
+            make.left.equalTo(self.musicPlayBtn.snp.right).offset(10)
+            make.top.equalTo(self.musicPlayBtn)
+            make.width.equalTo(self.musicPlayBtn)
+            make.bottom.equalTo(self.musicPlayBtn)
+        }
+        return obj
+    }()
+    
+    lazy var musicStopBtn:UIButton = {
+        let obj = UIButton()
+        obj.addTarget(self, action: #selector(musicPlayClick(sender:)), for: .touchUpInside)
+        self.view.addSubview(obj)
+        obj.snp.makeConstraints { (make) in
+            make.left.equalTo(self.musicResumeBtn.snp.right).offset(10)
+            make.top.equalTo(self.musicResumeBtn)
+            make.width.equalTo(self.musicResumeBtn)
+            make.bottom.equalTo(self.musicResumeBtn)
         }
         return obj
     }()
@@ -115,15 +138,22 @@ class ViewController: UIViewController {
         self.networkImageView.backgroundColor = UIColor.blue
         self.networkImageView.kf.setImage(with: URL(string: "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1473836766,4030812874&fm=26&gp=0.jpg"))
         
-        self.pdfBtn.backgroundColor = UIColor.gray
-        self.pdfBtn.setTitle("打开PDF", for: .normal)
+        self.musicPlayBtn.backgroundColor = UIColor.gray
+        self.musicPlayBtn.setTitle("Play", for: .normal)
+        self.musicPlayBtn.setTitle("Stop", for: .selected)
+        
+        self.musicResumeBtn.backgroundColor = UIColor.gray
+        self.musicResumeBtn.setTitle("Play Resume", for: .normal)
+        
+        self.musicStopBtn.backgroundColor = UIColor.gray
+        self.musicStopBtn.setTitle("Play Stop", for: .normal)
         
         self.view.layoutIfNeeded()
         let listVC = ListVC()
         listVC.isPlainStyle = true
         self.addChild(listVC)
         self.view.addSubview(listVC.view)
-        let visiableY:CGFloat = self.networkBtn.frame.size.height + self.networkBtn.frame.origin.y + 10
+        let visiableY:CGFloat = self.musicPlayBtn.frame.size.height + self.musicPlayBtn.frame.origin.y + 10
         listVC.view.frame = CGRect.init(x: 10, y: visiableY, width: SCREEN_WIDTH - 20, height: SCREEN_HEIGHT - visiableY - 29)
         listVC.tableView.frame = listVC.view.bounds
 //        listVC.tableView.frame = CGRect.init(x: 0, y: 0, width: 100, height: 100)
@@ -203,11 +233,23 @@ class ViewController: UIViewController {
         
     }
     
-    @objc func pdfBtnClick(){
-//        var pdfReader = JKPDFReader()
-//        pdfReader.openPDFAtPath(path: Bundle.main.url(forResource: "test.pdf", withExtension: nil)!)
-        let audioPlayer = JKAudioPlayer.init(url: Bundle.main.url(forResource: "test.wav", withExtension: nil)!)
-//        audioPlayer!.play()
+    @objc func musicPlayClick(sender:UIButton){
+        let audioPlayer = JKAudioPlayer.shared
+        if(sender == self.musicPlayBtn){
+            if sender.isSelected {
+                audioPlayer.pause()
+                sender.isSelected = false
+            }else{
+                var url = Bundle.main.url(forResource: "test.m4a", withExtension: nil)
+//                url = URL.init(string: "https://music.163.com/song?id=1399054231&userid=2506586")
+                audioPlayer.play(url:url!)
+                sender.isSelected = true
+            }
+        }else if(sender == self.musicResumeBtn){
+            audioPlayer.resume()
+        }else if(sender == self.musicStopBtn){
+            audioPlayer.stop()
+        }
     }
     
     func loadWebVCInView() {

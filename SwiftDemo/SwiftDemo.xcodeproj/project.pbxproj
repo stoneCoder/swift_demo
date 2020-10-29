@@ -41,6 +41,7 @@
 		6A7A2DF225491AAB005C1971 /* test.flac in Resources */ = {isa = PBXBuildFile; fileRef = 6A7A2DF025491AAB005C1971 /* test.flac */; };
 		6A7A2DF325491AAB005C1971 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6A7A2DF125491AAB005C1971 /* test.mp4 */; };
 		6A7A2E052549440B005C1971 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A7A2E042549440B005C1971 /* test.mp3 */; };
+		6A7A2E14254971A9005C1971 /* JKAudioUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A2E13254971A9005C1971 /* JKAudioUtil.swift */; };
 		6A9798E825198F5E0088D0A3 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9798E725198F5E0088D0A3 /* Const.swift */; };
 		6A9798EB2519CEC10088D0A3 /* UIImage+imageWithColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9798EA2519CEC10088D0A3 /* UIImage+imageWithColor.swift */; };
 		6A9798ED2519E3430088D0A3 /* UIViewController+ShowAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9798EC2519E3430088D0A3 /* UIViewController+ShowAlertView.swift */; };
@@ -84,6 +85,7 @@
 		6A7A2DF025491AAB005C1971 /* test.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.flac; sourceTree = "<group>"; };
 		6A7A2DF125491AAB005C1971 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		6A7A2E042549440B005C1971 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
+		6A7A2E13254971A9005C1971 /* JKAudioUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKAudioUtil.swift; sourceTree = "<group>"; };
 		6A9798E725198F5E0088D0A3 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		6A9798EA2519CEC10088D0A3 /* UIImage+imageWithColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+imageWithColor.swift"; sourceTree = "<group>"; };
 		6A9798EC2519E3430088D0A3 /* UIViewController+ShowAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+ShowAlertView.swift"; path = "SwiftDemo/Category/UIViewController+ShowAlertView.swift"; sourceTree = SOURCE_ROOT; };
@@ -121,6 +123,7 @@
 				6A227ABC251DE4BE005D0849 /* Car.swift */,
 				4867887825450A670054D136 /* JKPDFReader.swift */,
 				4867887C25456CAF0054D136 /* JKAudioPlayer.swift */,
+				6A7A2E13254971A9005C1971 /* JKAudioUtil.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				6A26E1BA25184FFF006CB942 /* RootTBC.swift in Sources */,
 				6A26E1C225185086006CB942 /* CollectionVC.swift in Sources */,
 				6A9798EB2519CEC10088D0A3 /* UIImage+imageWithColor.swift in Sources */,
+				6A7A2E14254971A9005C1971 /* JKAudioUtil.swift in Sources */,
 				6A9798E825198F5E0088D0A3 /* Const.swift in Sources */,
 				6A9798ED2519E3430088D0A3 /* UIViewController+ShowAlertView.swift in Sources */,
 				6A6933B1251F0E3800243B34 /* ListVC.swift in Sources */,
