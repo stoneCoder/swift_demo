@@ -18,6 +18,7 @@
 		6A05F4A6251D999B00C098EF /* Convertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05F4A5251D999B00C098EF /* Convertable.swift */; };
 		6A05F4A9251DC15100C098EF /* SSResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05F4A8251DC15100C098EF /* SSResponse.swift */; };
 		6A05F4AD251DC77300C098EF /* ModelUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A05F4AC251DC77300C098EF /* ModelUtils.swift */; };
+		6A0F9F5B254C058100E4EA72 /* JKHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0F9F5A254C058100E4EA72 /* JKHTTPRequest.swift */; };
 		6A227ABD251DE4BE005D0849 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A227ABC251DE4BE005D0849 /* Car.swift */; };
 		6A26E19F25182D05006CB942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E19E25182D05006CB942 /* AppDelegate.swift */; };
 		6A26E1A125182D05006CB942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E1A025182D05006CB942 /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 		6A26E1C02518506D006CB942 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E1BF2518506D006CB942 /* WebVC.swift */; };
 		6A26E1C225185086006CB942 /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E1C125185086006CB942 /* CollectionVC.swift */; };
 		6A26E1C425187981006CB942 /* WKDetailWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E1C325187981006CB942 /* WKDetailWebView.swift */; };
+		6A2D52EC254ABB0400BC7F2C /* JKAudioStreamPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2D52EB254ABB0400BC7F2C /* JKAudioStreamPlayer.swift */; };
 		6A6933B1251F0E3800243B34 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6933B0251F0E3800243B34 /* ListVC.swift */; };
 		6A6933B3251F172400243B34 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6933B2251F172400243B34 /* ListViewCell.swift */; };
 		6A730AD8251C31C300313236 /* UIButton+SettingPositionWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A730AD7251C31C300313236 /* UIButton+SettingPositionWithTitle.swift */; };
@@ -60,6 +62,7 @@
 		6A05F4A5251D999B00C098EF /* Convertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convertable.swift; sourceTree = "<group>"; };
 		6A05F4A8251DC15100C098EF /* SSResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSResponse.swift; sourceTree = "<group>"; };
 		6A05F4AC251DC77300C098EF /* ModelUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUtils.swift; sourceTree = "<group>"; };
+		6A0F9F5A254C058100E4EA72 /* JKHTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKHTTPRequest.swift; sourceTree = "<group>"; };
 		6A227ABC251DE4BE005D0849 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		6A26E19B25182D05006CB942 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A26E19E25182D05006CB942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 		6A26E1BF2518506D006CB942 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		6A26E1C125185086006CB942 /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
 		6A26E1C325187981006CB942 /* WKDetailWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKDetailWebView.swift; sourceTree = "<group>"; };
+		6A2D52EB254ABB0400BC7F2C /* JKAudioStreamPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKAudioStreamPlayer.swift; sourceTree = "<group>"; };
 		6A6933B0251F0E3800243B34 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		6A6933B2251F172400243B34 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 		6A730AD7251C31C300313236 /* UIButton+SettingPositionWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SettingPositionWithTitle.swift"; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				4867887825450A670054D136 /* JKPDFReader.swift */,
 				4867887C25456CAF0054D136 /* JKAudioPlayer.swift */,
 				6A7A2E13254971A9005C1971 /* JKAudioUtil.swift */,
+				6A2D52EB254ABB0400BC7F2C /* JKAudioStreamPlayer.swift */,
+				6A0F9F5A254C058100E4EA72 /* JKHTTPRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 			files = (
 				6A730ADA251C732900313236 /* MVVMViewModel.swift in Sources */,
 				6A05F4A9251DC15100C098EF /* SSResponse.swift in Sources */,
+				6A0F9F5B254C058100E4EA72 /* JKHTTPRequest.swift in Sources */,
 				6A26E1C02518506D006CB942 /* WebVC.swift in Sources */,
 				6A730AD8251C31C300313236 /* UIButton+SettingPositionWithTitle.swift in Sources */,
 				6A05F4A2251D968C00C098EF /* Student.swift in Sources */,
@@ -357,6 +364,7 @@
 				6A26E1B825184F84006CB942 /* BaseNC.swift in Sources */,
 				4867887925450A670054D136 /* JKPDFReader.swift in Sources */,
 				6A26E1A125182D05006CB942 /* SceneDelegate.swift in Sources */,
+				6A2D52EC254ABB0400BC7F2C /* JKAudioStreamPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

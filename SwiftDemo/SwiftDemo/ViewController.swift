@@ -240,8 +240,7 @@ class ViewController: UIViewController {
                 audioPlayer.pause()
                 sender.isSelected = false
             }else{
-                var url = Bundle.main.url(forResource: "test.m4a", withExtension: nil)
-//                url = URL.init(string: "https://music.163.com/song?id=1399054231&userid=2506586")
+                var url = Bundle.main.url(forResource: "test.mp4", withExtension: nil)
                 audioPlayer.play(url:url!)
                 sender.isSelected = true
             }
