@@ -8,10 +8,27 @@
 
 import UIKit
 import AudioToolbox
+import Alamofire
 
 class JKAudioStreamPlayer: NSObject {
     var audioFileStreamID:AudioFileStreamID? = nil
     var readyToProducePackets:Bool = false
+    var audioFileURL:URL? = nil
+    var cachedPath:String? = nil
+    var cachedURL:URL? = nil
+    var streamRequest:DataStreamRequest? = nil
+    let progressQueue = DispatchQueue(label: "com.alamofire.progressQueue", qos: .utility)
+    
+    override init() {
+        super.init()
+    }
+    
+    convenience init(audioFile:URL) {
+        self.init()
+        audioFileURL = audioFile
+        openAudioFileStream()
+        createRequest()
+    }
     
     func openAudioFileStream(){
         openAudioFileStream(fileTypeHint: 0)
@@ -22,6 +39,35 @@ class JKAudioStreamPlayer: NSObject {
         if AudioFileStreamOpen(streamPlayer, audio_file_stream_property_listener_proc, audio_file_stream_packets_proc, fileTypeHint, &audioFileStreamID) != noErr {
             audioFileStreamID = nil
         }
+    }
+    
+    func createRequest(){
+        let request = AF.request(audioFileURL!)
+        request.downloadProgress { progress in
+            print(progress.totalUnitCount)
+        }
+        streamRequest = AF.streamRequest(audioFileURL!, automaticallyCancelOnStreamError: true, interceptor: nil).responseStream(on: progressQueue, stream: {[weak self] stream in
+            switch stream.event {
+                case let .stream(result):
+                    switch result {
+                    case let .success(data):
+                        self?.requestDidReceiveData(data: data as NSData)
+                    case let .failure(error):
+                        print(error)
+                    }
+                    case let .complete(completion):
+                        print("aaa")
+                }
+        })
+        print(streamRequest?.response)
+    }
+    
+    func requestDidReceiveData(data:NSData) {
+//        print(data)
+    }
+    
+    func requestDidComplete(){
+        
     }
     
     func closeAudioFileStream(){

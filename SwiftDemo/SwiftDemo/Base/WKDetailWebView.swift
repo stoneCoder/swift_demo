@@ -42,7 +42,13 @@ class WKDetailWebView: WKWebView,WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void){
-        if((navigationResponse.response as! HTTPURLResponse).statusCode == 200){
+        if(navigationResponse.response.isKind(of: HTTPURLResponse.self)){
+            if((navigationResponse.response as! HTTPURLResponse).statusCode == 200){
+                decisionHandler(.allow)
+            }else{
+                decisionHandler(.cancel)
+            }
+        }else if(navigationResponse.response.isKind(of: URLResponse.self)){
             decisionHandler(.allow)
         }else{
             decisionHandler(.cancel)
