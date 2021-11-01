@@ -12,7 +12,7 @@ class NormalVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.edgesForExtendedLayout = .init(rawValue: 0)
         // Do any additional setup after loading the view.
         layoutUI()
     }

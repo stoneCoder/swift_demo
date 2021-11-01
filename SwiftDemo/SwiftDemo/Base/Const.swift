@@ -26,11 +26,24 @@ let NAVIGATIONBAR_HEIGHT = UINavigationController().navigationBar.frame.size.hei
 let LINE_HEIGHT = 1.0/UIScreen.main.scale
 
 
+var isNotchScreen: Bool {
+    if UIDevice.current.userInterfaceIdiom == .pad {
+        return false
+    }
+
+    let size = UIScreen.main.bounds.size
+    let notchValue: Int = Int(size.width/size.height * 100)
+
+    if 216 == notchValue || 46 == notchValue {
+        return true
+    }
+    return false
+}
+
 //判断是否iphoneX
-//let W_IPHONEX = (Double(SCREEN_WIDTH) == Double(375.0) && Double(SCREEN_HEIGHT) == Double(812.0)) ? true : false
-//let W_NAVBARHEIGHT = W_IPHONEX ? Double(88.0) : Double(64.0)
-//let W_TABBARHEIGHT = W_IPHONEX ? Double(49.0+34.0) : Double(49.0)
-//let W_STATUSBARHEIGHT = W_IPHONEX ? Double(44.0) : Double(20.0)
+let STATUSBAR_HEIGHT = isNotchScreen ? CGFloat(44.0) : CGFloat(20.0)
+let NAVBAR_HEIGHT = isNotchScreen ? CGFloat(88.0) : CGFloat(64.0)
+let TABBAR_HEIGHT = isNotchScreen ? CGFloat(83.0) : CGFloat(49.0)
 
 func colorFromRGB(r:CGFloat,_ g:CGFloat,_ b:CGFloat, alpha:CGFloat) -> UIColor{
     return UIColor(red: (r)/255.0, green: (g)/255.0, blue: (b)/255.0, alpha: alpha)

@@ -22,8 +22,6 @@
 		6A227ABD251DE4BE005D0849 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A227ABC251DE4BE005D0849 /* Car.swift */; };
 		6A26E19F25182D05006CB942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E19E25182D05006CB942 /* AppDelegate.swift */; };
 		6A26E1A125182D05006CB942 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E1A025182D05006CB942 /* SceneDelegate.swift */; };
-		6A26E1A325182D05006CB942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E1A225182D05006CB942 /* ViewController.swift */; };
-		6A26E1A625182D05006CB942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A26E1A425182D05006CB942 /* Main.storyboard */; };
 		6A26E1A825182D07006CB942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A26E1A725182D07006CB942 /* Assets.xcassets */; };
 		6A26E1AB25182D07006CB942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A26E1A925182D07006CB942 /* LaunchScreen.storyboard */; };
 		6A26E1B3251836B6006CB942 /* SwiftDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26E1B2251836B6006CB942 /* SwiftDemo.swift */; };
@@ -39,6 +37,8 @@
 		6A6933B3251F172400243B34 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6933B2251F172400243B34 /* ListViewCell.swift */; };
 		6A730AD8251C31C300313236 /* UIButton+SettingPositionWithTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A730AD7251C31C300313236 /* UIButton+SettingPositionWithTitle.swift */; };
 		6A730ADA251C732900313236 /* MVVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A730AD9251C732900313236 /* MVVMViewModel.swift */; };
+		6A79D4D8256DFB1300308EDA /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 6A79D4D7256DFB1300308EDA /* test.html */; };
+		6A79D4DF256E06BE00308EDA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79D4DE256E06BE00308EDA /* HomeVC.swift */; };
 		6A7A2DEE25491AA1005C1971 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A7A2DED25491AA1005C1971 /* test.wav */; };
 		6A7A2DF225491AAB005C1971 /* test.flac in Resources */ = {isa = PBXBuildFile; fileRef = 6A7A2DF025491AAB005C1971 /* test.flac */; };
 		6A7A2DF325491AAB005C1971 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6A7A2DF125491AAB005C1971 /* test.mp4 */; };
@@ -67,8 +67,6 @@
 		6A26E19B25182D05006CB942 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A26E19E25182D05006CB942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A26E1A025182D05006CB942 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6A26E1A225182D05006CB942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6A26E1A525182D05006CB942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A26E1A725182D07006CB942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A26E1AA25182D07006CB942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A26E1AC25182D07006CB942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +83,9 @@
 		6A6933B2251F172400243B34 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 		6A730AD7251C31C300313236 /* UIButton+SettingPositionWithTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SettingPositionWithTitle.swift"; sourceTree = "<group>"; };
 		6A730AD9251C732900313236 /* MVVMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModel.swift; sourceTree = "<group>"; };
+		6A79D4D7256DFB1300308EDA /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		6A79D4DC256DFF4400308EDA /* SwiftDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftDemo.entitlements; sourceTree = "<group>"; };
+		6A79D4DE256E06BE00308EDA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		6A7A2DED25491AA1005C1971 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
 		6A7A2DF025491AAB005C1971 /* test.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.flac; sourceTree = "<group>"; };
 		6A7A2DF125491AAB005C1971 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
@@ -155,6 +156,8 @@
 		6A26E19D25182D05006CB942 /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6A79D4DC256DFF4400308EDA /* SwiftDemo.entitlements */,
+				6A79D4D7256DFB1300308EDA /* test.html */,
 				6A7A2E042549440B005C1971 /* test.mp3 */,
 				6A7A2DF025491AAB005C1971 /* test.flac */,
 				6A7A2DF125491AAB005C1971 /* test.mp4 */,
@@ -167,10 +170,9 @@
 				6A26E1B2251836B6006CB942 /* SwiftDemo.swift */,
 				6A26E19E25182D05006CB942 /* AppDelegate.swift */,
 				6A26E1A025182D05006CB942 /* SceneDelegate.swift */,
-				6A26E1A225182D05006CB942 /* ViewController.swift */,
+				6A79D4DE256E06BE00308EDA /* HomeVC.swift */,
 				6A6933B0251F0E3800243B34 /* ListVC.swift */,
 				6A6933B2251F172400243B34 /* ListViewCell.swift */,
-				6A26E1A425182D05006CB942 /* Main.storyboard */,
 				6A26E1A725182D07006CB942 /* Assets.xcassets */,
 				6A26E1A925182D07006CB942 /* LaunchScreen.storyboard */,
 				6A26E1AC25182D07006CB942 /* Info.plist */,
@@ -281,7 +283,7 @@
 				6A26E1A825182D07006CB942 /* Assets.xcassets in Resources */,
 				4867887F254570010054D136 /* test.m4a in Resources */,
 				6A7A2DF225491AAB005C1971 /* test.flac in Resources */,
-				6A26E1A625182D05006CB942 /* Main.storyboard in Resources */,
+				6A79D4D8256DFB1300308EDA /* test.html in Resources */,
 				6A7A2DF325491AAB005C1971 /* test.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +344,6 @@
 				6A730AD8251C31C300313236 /* UIButton+SettingPositionWithTitle.swift in Sources */,
 				6A05F4A2251D968C00C098EF /* Student.swift in Sources */,
 				6A26E1B3251836B6006CB942 /* SwiftDemo.swift in Sources */,
-				6A26E1A325182D05006CB942 /* ViewController.swift in Sources */,
 				6A26E1BA25184FFF006CB942 /* RootTBC.swift in Sources */,
 				6A26E1C225185086006CB942 /* CollectionVC.swift in Sources */,
 				6A9798EB2519CEC10088D0A3 /* UIImage+imageWithColor.swift in Sources */,
@@ -350,6 +351,7 @@
 				6A9798E825198F5E0088D0A3 /* Const.swift in Sources */,
 				6A9798ED2519E3430088D0A3 /* UIViewController+ShowAlertView.swift in Sources */,
 				6A6933B1251F0E3800243B34 /* ListVC.swift in Sources */,
+				6A79D4DF256E06BE00308EDA /* HomeVC.swift in Sources */,
 				6A26E1BC2518502A006CB942 /* NormalVC.swift in Sources */,
 				6A26E19F25182D05006CB942 /* AppDelegate.swift in Sources */,
 				6A05F494251D80BD00C098EF /* NetworkConst.swift in Sources */,
@@ -371,14 +373,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6A26E1A425182D05006CB942 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A26E1A525182D05006CB942 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6A26E1A925182D07006CB942 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -494,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -509,6 +503,7 @@
 			baseConfigurationReference = A67E8F44834045E0284A2D4F /* Pods-SwiftDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftDemo/SwiftDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3B7GZ798CK;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
@@ -528,6 +523,7 @@
 			baseConfigurationReference = 3FA653C0FBECB7679CF9434D /* Pods-SwiftDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftDemo/SwiftDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3B7GZ798CK;
 				INFOPLIST_FILE = SwiftDemo/Info.plist;
